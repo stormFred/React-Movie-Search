@@ -31,7 +31,7 @@
 
 ```
 
-- using async await to fetch data from an api:
+- using async/await to fetch data from an api asynchronously:
 
 ```React js
 
