@@ -5,17 +5,15 @@ export default function SearchMovies() {
 	// Track states: input query, movies
 	const [query, setQuery] = useState('')
 	const [movies, setMovies] = useState([])
-
-	const searchMovies = async (e) => {
+	async function searchMovies(e) {
 		// prevent page reload
 		e.preventDefault()
 
 		// connect to themovieDb
 		const url = `https://api.themoviedb.org/3/search/movie?api_key=27dafd812c1e71b956120968116eaf3f&language=en-US&query=${query}`
 
-		// catch errors
 		try {
-			// use fetch api if you're making a GET request and return a promise
+			// use fetch api if you're making a GET request to return a promise
 			const res = await fetch(url)
 			const data = await res.json()
 

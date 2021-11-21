@@ -17,6 +17,17 @@ p {
 	font-size: 1.6rem;
 }
 
+.trending,
+.trending--movie {
+	display: grid;
+	text-align: center;
+}
+
+.trending--heading {
+	font-size: 3rem;
+	text-align: center;
+}
+
 small {
 	font-size: 1.2rem;
 }
@@ -48,7 +59,7 @@ small {
 	padding: 0.5rem 2rem;
 	line-height: 2.8rem;
 	border-radius: 2rem;
-	border: 1px solid #ddd;
+	border: 1px solid black;
 	margin-bottom: 1rem;
 }
 
@@ -68,6 +79,7 @@ small {
 }
 
 .card-list {
+	display: grid;
 	margin-top: 4rem;
 }
 
@@ -107,5 +119,33 @@ small {
 	.button {
 		margin-bottom: 1rem;
 		padding: 1rem 4rem;
+	}
+
+	.card-list {
+		grid-template-columns: repeat(3, auto);
+		margin-left: -8%;
+		gap: 2rem;
+	}
+
+	.card {
+		width: 35rem;
+	}
+
+	.trending {
+		gap: 2rem;
+		margin-left: -8%;
+		grid-template-columns: repeat(4, auto);
+		grid-template-rows: repeat(auto, auto);
+	}
+	.trending--movie {
+		padding: 1rem;
+		border-radius: 1rem;
+		width: 25rem;
+		row-gap: 2rem;
+	}
+
+	.trend--image {
+		height: 30rem;
+		width: 90%;
 	}
 }
