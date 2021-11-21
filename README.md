@@ -1,7 +1,7 @@
 ### Links
 
 - GitHub URL: (https://github.com/stormFred/React-Movie-Search)
-- Live Site URL:(https://stormfred-portfolio.netlify.app)
+- Live Site URL:(https://searchmovieswithreact.netlify.app/)
 
 ## My process
 
